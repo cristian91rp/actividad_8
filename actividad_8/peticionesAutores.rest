@@ -1,0 +1,37 @@
+@PORT = 3000
+@HOST = http://localhost:{{PORT}}
+
+GET {{HOST}}/api/autores
+
+###
+GET {{HOST}}/api/autores/10
+
+
+###
+GET {{HOST}}/api/autores/2/posts
+
+
+###
+POST {{HOST}}/api/autores
+Content-Type: application/json
+
+{
+    "nombre": "",
+    "apellido": "",
+    "email": "",
+    "imagen": ""
+}
+
+###
+PUT {{HOST}}/api/autores/46
+Content-Type: application/json
+
+{
+    "nombre": "",
+    "apellido": "",
+    "email": "",
+    "imagen": ""
+}
+
+###
+DELETE {{HOST}}/api/autores/31
